@@ -16,7 +16,6 @@ body {
   line-height: 1.5;
   font-weight: 300;
   font-family: "Open Sans", sans-serif;
-  /* font-family: "Cormorant", serif; */
 }
 
 a {
@@ -52,4 +51,53 @@ li {
 
 .user-actions__item--search {
   margin-left: 80px;
+}
+
+.top {
+  background-image: url("/images/top-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.top__inner {
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.top__title {
+  font-family: "Cormorant", serif;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 100%;
+  max-width: 790px;
+}
+
+.top__text {
+  font-family: Cormorant;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 557px;
+  margin-bottom: 48px;
+  margin-top: 20px;
+}
+
+.blockquote {
+  margin: 150px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.blockquote__text {
+  text-align: center;
+  font-family: Cormorant;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: normal;
+  max-width: 704px;
 }
