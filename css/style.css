@@ -36,6 +36,28 @@ button {
 }
 
 .menu__btn {
+  z-index: 2;
+  display: none;
+  position: relative;
+}
+
+.menu--close {
+  z-index: 1;
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.menu--open {
+  display: block;
+}
+
+.mobile__nav,
+.menu__close-btn {
   display: none;
 }
 
@@ -48,6 +70,8 @@ button {
 }
 
 .menu__list {
+  z-index: 3;
+  position: relative;
   display: flex;
   gap: 65px;
   font-weight: 400;
@@ -118,7 +142,52 @@ button {
 
 @media (max-width: 860px) {
   .menu__list {
-    display: none;
+    display: block;
+    width: 480px;
+    left: 0;
+    top: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    text-align: center;
+    padding-top: 60px;
+    transform: translateY(-100%);
+    transition: 0.7s;
+  }
+  .menu__list.menu__list--open {
+    transform: translateY(0%);
+  }
+
+  .mobile__nav {
+    display: block;
+  }
+  .menu__close-btn {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  .menu__item {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-family: "Cormorant", serif;
+  }
+  .mobile__nav {
+    padding-top: 60px;
+    margin: 60px 30px;
+    border-top: 2px solid #f7f2ea;
+  }
+  .mobile__menu-item {
+    margin-bottom: 35px;
+  }
+  .mobile-actions {
+    background-color: #f7f2ea;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    align-items: center;
+    padding: 0 80px;
   }
   .menu__btn {
     display: flex;
@@ -149,6 +218,7 @@ button {
 @media (max-width: 768px) {
   .top__title {
     font-size: 40px;
+    line-height: normal;
   }
   .top__text {
     font-size: 18px;
@@ -165,6 +235,10 @@ button {
 }
 
 @media (max-width: 480px) {
+  .menu__list {
+    display: block;
+    width: 360px;
+  }
   .user-actions__item--search {
     margin-left: 0px;
   }
@@ -174,7 +248,19 @@ button {
   .blockquote {
     margin: 60px 0;
   }
+  .top__inner {
+    min-height: 360px;
+  }
+  .top {
+    background-position: left;
+  }
 }
 
 @media (max-width: 360px) {
+  .top__title {
+    font-size: 24px;
+  }
+  .top__text {
+    font-size: 14px;
+  }
 }
