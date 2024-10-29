@@ -137,10 +137,38 @@ button {
   max-width: 704px;
 }
 
+.assortment__title {
+  font-family: Cormorant;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.assortment {
+  margin-bottom: 150px;
+  font-family: Cormorant;
+}
+
+.assortment__list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.assortment__item {
+  text-align: center;
+}
+
 @media (max-width: 1000px) {
 }
 
 @media (max-width: 860px) {
+  .assortment__list {
+    justify-content: center;
+  }
   .menu__list {
     display: block;
     width: 480px;
@@ -235,6 +263,16 @@ button {
 }
 
 @media (max-width: 480px) {
+  .assortment__item {
+    max-width: 50%;
+  }
+  .assortment__img {
+    width: 100%;
+  }
+  .assortment__title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
   .menu__list {
     display: block;
     width: 360px;
