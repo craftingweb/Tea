@@ -138,7 +138,8 @@ button {
 }
 
 .assortment__title,
-.reviews__title {
+.reviews__title,
+.title {
   font-family: Cormorant;
   font-size: 40px;
   font-style: normal;
@@ -344,4 +345,68 @@ button {
   .top__text {
     font-size: 14px;
   }
+}
+
+.main-blog {
+  padding: 150px 0;
+}
+
+.main-blog__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 58px 40px;
+  margin-bottom: 60px;
+}
+
+.main-blog__item {
+  flex-basis: 542px;
+  display: flex;
+  gap: 0 20px;
+}
+
+.main-blog__title {
+  font-family: Cormorant;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* margin-bottom: 10px; */
+}
+
+.main-blog__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-blog__author,
+.main-blog__link {
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+
+.main-blog__link {
+  /* margin-top: 48px; */
+  display: block;
+  position: relative;
+  padding-right: 8px;
+}
+
+.main-blog__link::after {
+  content: url("/images/arrow.svg");
+  position: absolute;
+  margin-left: 8px;
+  margin-bottom: 3px;
+}
+
+.main-blog__btn {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 12px 40px;
+  border: 1px solid #151618;
 }
