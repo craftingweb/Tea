@@ -370,7 +370,6 @@ button {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  /* margin-bottom: 10px; */
 }
 
 .main-blog__content {
@@ -388,7 +387,6 @@ button {
 }
 
 .main-blog__link {
-  /* margin-top: 48px; */
   display: block;
   position: relative;
   padding-right: 8px;
@@ -409,4 +407,108 @@ button {
   text-align: center;
   padding: 12px 40px;
   border: 1px solid #151618;
+}
+
+.mailing-list {
+  padding: 100px 0;
+  background-color: #f7f2ea;
+  background-image: url("/images/mailing-list-bg.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.mailing-list__title {
+  margin-bottom: 50px;
+  font-family: "Cormorant", serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.mailing-list__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mailing-list__text {
+  max-width: 580px;
+}
+
+.mailing-list__form {
+  max-width: 580px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mailing-list__input::placeholder {
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  color: #b8b58b;
+}
+.mailing-list__input {
+  width: 439px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #b8b58b;
+  outline: none;
+  margin-right: 25px;
+}
+
+.mailing-list__btn {
+  text-align: center;
+  padding: 12px 40px;
+  border: 1px solid #151618;
+  font-family: "Open Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.checkbox__text {
+  font-family: "Open Sans";
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  padding-left: 20px;
+}
+
+.checkbox {
+  position: absolute;
+  height: 1px;
+  width: 1px;
+  color: red;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+.checkbox__style {
+  height: 10px;
+  width: 10px;
+  position: absolute;
+  border: 1px solid #151618;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+label {
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.checkbox:checked + .checkbox__style::after {
+  content: "";
+  height: 5px;
+  width: 5px;
+  background-color: #151618;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
