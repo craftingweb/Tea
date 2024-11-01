@@ -607,3 +607,41 @@ label {
     padding: 60px 0;
   }
 }
+@media (max-width: 375px) {
+  .main-blog__item {
+    display: block;
+    text-align: center;
+  }
+  .main-blog__content {
+    margin: 0 auto;
+  }
+  .main-blog__img,
+  .main-blog__title,
+  .main-blog__author {
+    margin-bottom: 10px;
+  }
+  .mailing-list__title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  .mailing-list__text {
+    font-size: 14px;
+  }
+  .mailing-list__input {
+    width: 180px;
+  }
+  .title {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .priorities__title {
+    font-size: 20px;
+  }
+  .priorities__text {
+    font-size: 12px;
+    margin-bottom: 20px;
+  }
+  .priorities__item {
+    padding: 15px;
+  }
+}
