@@ -747,7 +747,6 @@ label {
   display: flex;
   gap: 20px;
   align-items: center;
-  /* width: 100%; */
   margin-left: 97px;
 }
 
@@ -772,4 +771,44 @@ label {
   margin-top: -6px;
   display: flex;
   gap: 20px;
+}
+
+@media (max-width: 1000px) {
+  .footer__contacts {
+    display: none;
+  }
+  .footer__blockquote {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .footer__products,
+  .footer__company {
+    display: none;
+  }
+  .footer__inner {
+    display: block;
+  }
+  .footer__contacts {
+    display: block;
+  }
+  .footer__copy {
+    margin-right: 40px;
+  }
+  .footer__inner {
+    margin-bottom: 50px;
+  }
+  .footer__contacts-title {
+    text-align: center;
+  }
+  .footer__nav-logo {
+    margin-left: 40px;
+  }
+  .footer {
+    padding-top: 50px;
+  }
+  .mailing-list__input {
+    width: 250px;
+  }
 }
